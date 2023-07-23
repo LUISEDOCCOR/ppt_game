@@ -27,10 +27,10 @@ function get_select(select_user){
     if(select_user == computer_data){
         game_win_info.innerHTML = `There is no winner, <b>it's a draw</b>`
     }else if(select_user == 1 && computer_data == 2){
-        game_win_info.innerHTML = `The winner is the <b>Computer</b> with ${computer_selection}`
+        game_win_info.innerHTML = `The winner is the <b>Player</b> with ${selection}`
         cp()
     }else if(select_user == 2 && computer_data == 1){
-        game_win_info.innerHTML = `The winner is the <b>Player</b> with ${selection}` 
+        game_win_info.innerHTML = `The winner is the <b>Computer</b> with ${computer_selection}` 
         up()
     }else if(select_user == 1 && computer_data == 3){
         game_win_info.innerHTML = `The winner is the <b>Computer</b> with ${computer_selection}` 
