@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+    background-color: #515151;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+#user{
+    display: flex;
+    gap: 20px;
+}
+#game_area{
+    display: flex;
+    justify-content: center;
+}
+.type_user{
+    background-color: #fff;
+    width: 245px;
+    height: 200px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 25px;
+}
+.type_user h5{
+    margin-top: 10px;
+}
+.points{
+    margin-top: 30px;
+}
+.type_user span{
+    font-size: 50px;
+}
+#game_area .span{
+    border: 1px solid black;
+    height: 200px;
+}
+#game_win_info{
+    margin-bottom: 30px;
+    color: white;
+    
+}
+.user_select{
+    width: 150px;
+    font-size: 30px;
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+.user_select:hover{
+    opacity: .8;
+    transition: all .2s;
+}
+@media screen and (max-width: 500px) {
+    .type_user{
+        width: 45vw;
+        height: 25vh;
+        margin-bottom: 7vh;
+    }
+    #game_area .span{
+        height: 25vh;
+    }
+    .points{
+        margin-top: 2vh;
+    }
+    .user_select{
+        width: 25vw;
+        cursor: default;
+        padding: 3px;
+    }
+    .user_select:hover{
+        opacity: 1;
+        border: 2px solid blueviolet;
+    }
+}

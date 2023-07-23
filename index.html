@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Local -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <script defer src="./js/script.js"></script>
+    <title>Piedra Papel o Tijera</title>
+</head>
+<body>
+    <main>
+        <div id="game_area">
+            <div style="border-top-left-radius: 20px; border-bottom-left-radius: 20px;" class="type_user">
+                <h5>Player</h5>
+                <div class="points"></div>
+                <span id="user_points">0</span>
+            </div>
+            <span class="span"></span>
+            <div style="border-top-right-radius:20px; border-bottom-right-radius: 20px;" class="type_user">
+                <h5>Computer</h5>
+                <div class="points"></div>
+                <span id="computer_points">1</span>
+            </div>
+        </div>
+        <div id="game_win_info">The winner is a <b>Computer</b> whit ✊</div>
+        <div id="user">
+            <button class="user_select">🖐</button>
+            <button class="user_select">👊</button>
+            <button class="user_select">✊</button>
+        </div>
+    </main>
+</body>
+</html>
