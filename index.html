@@ -22,14 +22,17 @@
             <div style="border-top-right-radius:20px; border-bottom-right-radius: 20px;" class="type_user">
                 <h5>Computer</h5>
                 <div class="points"></div>
-                <span id="computer_points">1</span>
+                <span id="computer_points">0</span>
             </div>
         </div>
-        <div id="game_win_info">The winner is a <b>Computer</b> whit ✊</div>
+        <div id="game_win_info"></div>
         <div id="user">
-            <button class="user_select">🖐</button>
-            <button class="user_select">👊</button>
-            <button class="user_select">✊</button>
+            <button class="user_select" onclick="get_select(1)">🖐</button>
+            <button class="user_select" onclick="get_select(2)">👊</button>
+            <button class="user_select" onclick="get_select(3)">✌</button>
+        </div>
+        <div id="reset">
+            <button onclick="reset()">RESET</button>
         </div>
     </main>
 </body>
